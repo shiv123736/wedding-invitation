@@ -634,6 +634,9 @@ a {
 	/* display: grid; */
 	font-size: 16px;
 	}
+	.savethedate_image {
+		max-width: 65%;
+	  }
 
   }
 
@@ -660,6 +663,9 @@ a {
 		width: 100%;
 		height: 100%;
 	}
+	.savethedate_image {
+		max-width: 65%;
+	  }
 
 	.block{
 	width: 75px;
@@ -740,6 +746,10 @@ a {
 	.wrapper section .item {
 		max-width: 100%;
 	  }
+
+	  .savethedate_image {
+		max-width: 65%;
+	  }
   }  
 
 
@@ -756,6 +766,9 @@ a {
 	object-fit: cover;
   }
 
+  .hindi {
+	position: relative;
+  }
 
   blockquote {
 	position: relative;
@@ -773,10 +786,10 @@ a {
 		content: "“";
 		font-family: serif;
 		position: absolute;
-		right: 100%;
+		right: 95%;
 		font-size: 75px;
 		line-height: 0px;
-		top: 50px;
+		top: 20px;
 		color: #674ea7;
 		animation: dancing 1s linear infinite;
 		display: inline-block;
@@ -790,7 +803,7 @@ a {
 		width: 80px;
 		height: 5px;
 		background: #e56d39;
-		left: 1em;
+		left: 6rem
 	}
 
 	@keyframes dancing {

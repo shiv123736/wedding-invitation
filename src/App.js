@@ -1,6 +1,6 @@
 import '../src/App.css';
 import Welcome from "./components/welcome";
-import '../src/js/main';
+import '../src/js/main.js';
 
 
 
