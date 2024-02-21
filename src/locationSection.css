@@ -1,0 +1,102 @@
+.location-section {
+    position: relative;
+    /* margin-bottom: 20px; */
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    /* Semi-transparent white background for readability */
+    height: 100vh;
+    /* border-radius: 10px; */
+    padding: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    animation: fadeIn 1s ease;
+    /* background-image: url('./images/map.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; */
+}
+
+
+/* fade background  */
+
+/* .location-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+*/
+ 
+
+
+
+
+.location-section .loc-centre-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    text-align: center;
+    z-index: 2;
+    /* Ensure text is above the background */
+}
+
+.location-section h2 {
+    color: white;
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loc-centre-text {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff; /* Text color */
+    text-align: center;
+  }
+
+  .loc-centre-text h2 {
+    font-size: 2rem;
+    animation: slideInUp 1s ease; /* Animation */
+  }
+
+
+  .location-section .location-info {
+    color:white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .location-section .google-map {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* Keyframe animations */
+  @keyframes slideInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
