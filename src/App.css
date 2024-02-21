@@ -1,3 +1,9 @@
+
+
+.canva {
+	width: 100%;
+}
+
 @-webkit-keyframes fall {
 	0% {
 		opacity: 0.9;
