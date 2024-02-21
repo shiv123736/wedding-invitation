@@ -1,6 +1,6 @@
 // InvitationSection.js
 import React from 'react';
-import '../invitionSection.css';
+// import '../invitionSection.css';
 
 const InvitationSection = () => {
     return (

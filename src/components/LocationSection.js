@@ -1,6 +1,6 @@
 // LocationSection.js
 import React from 'react';
-import '../locationSection.css';
+// import '../locationSection.css';
 
 const LocationSection = () => {
     return (

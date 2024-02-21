@@ -1,0 +1,52 @@
+[debug] [2024-02-21T12:10:50.667Z] ----------------------------------------------------------------------
+[debug] [2024-02-21T12:10:50.669Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\v-shivam1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-02-21T12:10:50.669Z] CLI Version:   13.3.0
+[debug] [2024-02-21T12:10:50.670Z] Platform:      win32
+[debug] [2024-02-21T12:10:50.670Z] Node Version:  v18.16.0
+[debug] [2024-02-21T12:10:50.671Z] Time:          Wed Feb 21 2024 17:40:50 GMT+0530 (India Standard Time)
+[debug] [2024-02-21T12:10:50.671Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-21T12:10:50.734Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-21T12:10:50.735Z] > authorizing via signed-in user (test.geek.15.9.2021@gmail.com)
+[debug] [2024-02-21T12:10:50.735Z] [iam] checking project wedding-invitation-2c744 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-21T12:10:50.736Z] > refreshing access token with scopes: []
+[debug] [2024-02-21T12:10:50.738Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-21T12:10:50.738Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-21T12:11:11.807Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------791249277151703732775948","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2404:6800:4009:831::200a:443
+[debug] [2024-02-21T12:11:11.808Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-02-21T12:11:11.808Z] > refreshing access token with scopes: []
+[debug] [2024-02-21T12:11:11.809Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-21T12:11:11.809Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-21T12:11:34.217Z] ----------------------------------------------------------------------
+[debug] [2024-02-21T12:11:34.218Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\v-shivam1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-21T12:11:34.219Z] CLI Version:   13.3.0
+[debug] [2024-02-21T12:11:34.219Z] Platform:      win32
+[debug] [2024-02-21T12:11:34.219Z] Node Version:  v18.16.0
+[debug] [2024-02-21T12:11:34.220Z] Time:          Wed Feb 21 2024 17:41:34 GMT+0530 (India Standard Time)
+[debug] [2024-02-21T12:11:34.220Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-21T12:11:34.285Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-21T12:11:34.285Z] > authorizing via signed-in user (test.geek.15.9.2021@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\DEV\reactJS\wedding-invitation
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2024-02-21T12:11:48.699Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\v-shivam1\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:258:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
