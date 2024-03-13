@@ -1,14 +1,15 @@
 import React from "react";
 import "../css/welcome.css";
-import { useEffect, useRef } from "react";
-import AAudio from "../assets/mp3/asd.mp3";
+import { useEffect } from "react";
+import AAudio from "../assets/mp3/sajeya.mp3";
 import invitation1 from "../assets/img/jkl.gif";
-import invitation2 from "../assets/img/cvb.gif";
+import invitation11 from "../assets/img/Invitation_1.png";
+import invitation2 from "../assets/img/engage.gif";
 import invitation3 from "../assets/img/bvc.gif";
+import invitation33 from "../assets/img/Invitation_3.png";
 import invitation4 from "../assets/img/ggg.gif";
-import invitation_card from "../assets/SI.pdf";
-import SVG from "./svg";
-import SakuraFallingAnimation from "./SakuraFallingAnimation";
+import invitation_card from "../assets/invitation_card.pdf";
+import VideoPlayer from "./VideoPlayer";
 
 const Welcome = () => {
   useEffect(() => {
@@ -17,16 +18,34 @@ const Welcome = () => {
       audio.play(); // Play the audio when this function is called
     };
 
-    const pauseAudio = () => {
-      audio.pause(); // Pause the audio when this function is called
-    };
+    // const pauseAudio = () => {
+    //   audio.pause(); // Pause the audio when this function is called
+    // };
 
     document.addEventListener("click", playAudio); // Add event listener to play audio when user interacts with the page
     // document.addEventListener('scroll', playAudio);
 
+    // Function to create petals
+    const createPetal = () => {
+      const petal = document.createElement("div");
+      petal.classList.add("petal");
+      const left = Math.random() * window.innerWidth;
+      petal.style.left = `${left}px`;
+      document.body.appendChild(petal);
+
+      // Remove the petal after animation ends
+      petal.addEventListener("animationend", () => {
+        petal.remove();
+      });
+    };
+
+    // Interval to create petals at a regular interval
+    const petalInterval = setInterval(createPetal, 1000);
+
     return () => {
       // Clean up: remove event listener and pause audio when component unmounts
       document.removeEventListener("click", playAudio);
+      clearInterval(petalInterval);
       audio.pause();
     };
   }, []);
@@ -47,15 +66,16 @@ const Welcome = () => {
       <section id="media"></section>
       <div className="title">
         <p>
-          <b>।।श्री महावीराय नमः।। </b>
+          <b>।।ॐ नमः शिवाय।। </b>
         </p>
-        <h1>Prince</h1>
+        <h1>Shivam</h1>
         <h2>❤️AND❤️</h2>
-        <h1>Anjali</h1>
-        <h3>Are getting married</h3>
+        <h1>Surekha</h1>
+        <h3>Are getting engaged</h3>
         <p>
-          on <span className="date">18 April 2024</span>, At{" "}
-          <span className="place">Saheed samarak</span> Haripur[Alipur], Delhi
+          on <span className="date">17 April 2024: 4PM</span>, At{" "}
+          <span className="place">Saheed samarak</span> Haripur[Alipur], Delhi -
+          110036
         </p>
 
         {/* <SVG /> */}
@@ -105,20 +125,24 @@ const Welcome = () => {
         </a>
       </div>
 
+      <div style={{ padding: "20px" }}>
+        <VideoPlayer />
+      </div>
+
       <div className="wrapper">
         <section id="section1">
           <div className="item">
             <img src={invitation1} alt="Describe Image" />
           </div>
           <div className="item">
-            <img src={invitation1} alt="Describe Image" />
+            <img src={invitation11} alt="Describe Image" />
             {/* <img src="./assets/img/Invitation (1).png" alt="Describe Image" /> */}
           </div>
           <div className="item">
             <img src={invitation2} alt="Describe Image" />
           </div>
           <div className="item">
-            <img src={invitation3} alt="Describe Image" />
+            <img src={invitation33} alt="Describe Image" />
             {/* <img src="./assets/img/Invitation (2).png" alt="Describe Image" /> */}
           </div>
           <div className="item">
@@ -142,11 +166,11 @@ const Welcome = () => {
           <img className="savethedate_image" src={invitation4} alt="" />
         </div>
         <p className="footer">
-          With the divine grace of the almighty, I cordially invite you and your
-          family to my elder brother's wedding
+          With the divine grace of the almighty, we cordially invite you and
+          your family to our son engagement Ceromony
           <br />
           <br />
-          I'd eagerly await your kind presence in the auspicious occasion of my
+          I'd eagerly await your kind presence in the auspicious occasion of our
           family.
         </p>
       </div>

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // }
 
   // Set the date we're counting down to
-  const countDownDate = new Date("April 18, 2024 00:00:00").getTime();
+  const countDownDate = new Date("April 17, 2024 00:00:00").getTime();
 
   // Update the count down every 1 second
   const x = setInterval(function () {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("time").innerHTML = "Wedding Completed !!";
+      document.getElementById("time").innerHTML = "Engagement Completed !!";
     }
   }, 1000);
 
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "font-size: 32px",
   ].join(";");
 
-  console.log("\n\n%c SAVE THE DATE: 18th April, 2024", styles);
+  console.log("\n\n%c SAVE THE DATE: 17th April, 2024", styles);
   console.log(
     "%cYour presence is requested!%c\n\nRegards: Suresh Kumar",
     styles1,

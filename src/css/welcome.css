@@ -1,0 +1,19 @@
+/* Add this CSS to create the petal falling effect */
+.petal {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00; /* Color of the petal */
+    border-radius: 50%;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+  
