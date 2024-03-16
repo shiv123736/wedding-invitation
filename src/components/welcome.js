@@ -68,8 +68,11 @@ const Welcome = () => {
         <p>
           <b>।।ॐ नमः शिवाय।। </b>
         </p>
+        <p>
+          <b>❤️ 2 States ❤️</b>
+        </p>
         <h1>Shivam</h1>
-        <h2>❤️AND❤️</h2>
+        <h2>AND</h2>
         <h1>Surekha</h1>
         <h3>Are getting engaged</h3>
         <p>
